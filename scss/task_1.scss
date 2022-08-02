@@ -1,0 +1,39 @@
+.horizontal-menu{
+  font-family: roboto,sans-serif;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  .element-menu{
+    display: inline;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 28px;
+    background: #d9fce7;
+    color: #4f695a;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.25s, color 1s;
+    overflow: hidden;
+    &::after{
+      content: " ";
+      position: absolute;
+      height: 5px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #42b27a;
+      transform: translateY(+100%);
+      transition: all 0.1s;
+    }
+    &:hover{
+      background: rgba(194, 236, 214, 0);
+      color: black;
+      &::after{
+        transform: translateX(0);
+      }
+    }
+  }
+}
