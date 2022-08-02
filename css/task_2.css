@@ -1,5 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.maim-menu {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+.maim-menu .maim-menu-element:hover > ul {
+  display: block;
+}
+.maim-menu li {
+  display: flex;
+  margin: 1px auto;
+  text-align: center;
+  padding: 10px 0;
+  top: 0;
+  width: 180px;
+  justify-content: center;
+  background-color: #5363b3;
+  color: #bebed3;
+  cursor: pointer;
+}
+.maim-menu li:hover {
+  background-color: #3b4ca8;
+  color: white;
+}
 .maim-menu .sub-menu {
   position: absolute;
+  display: none;
+  left: 180px;
+  margin-top: -11px;
+}
+.maim-menu .sub-menu li {
+  position: relative;
+  background-color: #6cb270;
+}
+.maim-menu .sub-menu li a {
+  color: #bbe3cd;
+}
+.maim-menu .sub-menu li:hover {
+  background-color: #4da251;
+}
+.maim-menu .sub-menu li:hover a {
+  color: white;
 }
 
 /*# sourceMappingURL=task_2.css.map */
