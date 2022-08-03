@@ -40,12 +40,15 @@ ul li {
 .maim-menu li:hover {
   background-color: #3b4ca8;
   color: white;
+  transition: background-color 0.3s, color 0.3s;
 }
 .maim-menu .sub-menu {
   position: absolute;
   display: none;
   left: 180px;
   margin-top: -11px;
+  animation: display 2s;
+  transition: all 2s;
 }
 .maim-menu .sub-menu li {
   position: relative;
@@ -56,9 +59,11 @@ ul li {
 }
 .maim-menu .sub-menu li:hover {
   background-color: #4da251;
+  transition: background-color 0.3s;
 }
 .maim-menu .sub-menu li:hover a {
   color: white;
+  transition: color 0.3s;
 }
 
 /*# sourceMappingURL=task_2.css.map */

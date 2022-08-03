@@ -36,6 +36,7 @@ ul{
     &:hover{
       background-color: #3b4ca8;
       color: white;
+      transition: background-color 0.3s, color 0.3s;
     }
   }
   .sub-menu{
@@ -43,6 +44,8 @@ ul{
     display: none;
     left: 180px;
     margin-top: -11px;
+    animation: display 2s;
+    transition: all 2s;
     li{
       position: relative;
       background-color: #6cb270;
@@ -51,8 +54,11 @@ ul{
       }
       &:hover{
         background-color: #4da251;
+        transition: background-color 0.3s;
+
         a{
           color: white;
+          transition: color 0.3s;
         }
       }
     }
