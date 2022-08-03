@@ -96,13 +96,13 @@ a{
     .middle{
       .left-colon{
         width: 200px;
-        min-width: 200px;;
+        min-width: 200px;
       }
       .central-colon{
       }
       .right-colon{
         width: 150px;
-        min-width: 150px;;
+        min-width: 150px;
       }
     }
   }
@@ -111,7 +111,7 @@ a{
     .middle{
       .left-colon{
         width: 20%;
-        min-width: 20%;;
+        min-width: 20%;
       }
       .central-colon{
         width: 55%;
@@ -120,6 +120,19 @@ a{
       .right-colon{
         width: 25%;
         min-width: 25%;
+      }
+    }
+  }
+  &.mixed{
+    width: 100%;
+    .middle{
+      .left-colon, .right-colon{
+        width: 250px;
+        min-width: 250px;
+      }
+      .central-colon{
+      }
+      .right-colon{
       }
     }
   }
