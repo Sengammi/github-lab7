@@ -137,3 +137,25 @@ a{
     }
   }
 }
+.button-next{
+  display: flex;
+  .next-page{
+    padding: 10px 15px;
+    background-color: #cfe0d9;
+    border-radius: 10px;
+    font-variant: all-petite-caps;
+    margin: 20px auto;
+    justify-content: center;
+    text-align: center;
+    &:hover{
+      background-color: #c8ffe3;
+    }
+    &:active{
+      background-color: #b2eed1;
+    }
+    a{
+      color: #595959;
+      text-decoration: none;
+    }
+  }
+}

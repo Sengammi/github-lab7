@@ -128,5 +128,27 @@ a:active {
   width: 250px;
   min-width: 250px;
 }
+.button-next {
+  display: flex;
+}
+.button-next .next-page {
+  padding: 10px 15px;
+  background-color: #cfe0d9;
+  border-radius: 10px;
+  font-variant: all-petite-caps;
+  margin: 20px auto;
+  justify-content: center;
+  text-align: center;
+}
+.button-next .next-page:hover {
+  background-color: #c8ffe3;
+}
+.button-next .next-page:active {
+  background-color: #b2eed1;
+}
+.button-next .next-page a {
+  color: #595959;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=task_7.css.map */
