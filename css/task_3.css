@@ -87,7 +87,7 @@
   transition: all 0.4s;
 }
 .bottom.is-active {
-  height: 300px;
+  height: 100%;
   position: relative;
 }
 .bottom.is-active span a {
