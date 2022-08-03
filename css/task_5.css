@@ -1,3 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
 
+input[type=radio], input[type=checkbox] {
+  display: none;
+}
+
+.frame {
+  width: 100%;
+}
+.frame .checkboxes {
+  display: flex;
+  width: 100%;
+}
+.frame .radio-buttons {
+  display: flex;
+  width: 100%;
+}
+.frame .checkbox, .frame .radio-button {
+  display: inline;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.frame .checkbox label::before, .frame .radio-button label::before {
+  position: relative;
+  display: inline-block;
+  content: "";
+  margin-right: 10px;
+}
+.frame .checkbox label::before {
+  top: 7px;
+  width: 36px;
+  height: 36px;
+  -webkit-mask: url("/svg/checkbox-unchecked.svg") no-repeat 50% 50%;
+  mask: url("/svg/checkbox-unchecked.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #d7d9da;
+  transition: all 0.16s;
+}
+.frame .checkbox label:hover::before {
+  background-color: #adb0b2;
+}
+.frame .checkbox input:checked + label::before {
+  -webkit-mask: url("/svg/checkbox-checked.svg") no-repeat 50% 50%;
+  mask: url("/svg/checkbox-checked.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #961ade;
+}
+.frame .checkbox input:hover:checked + label::before {
+  background-color: #bf1bf2;
+}
+.frame .radio-button label::before {
+  top: 10px;
+  width: 42px;
+  height: 42px;
+  -webkit-mask: url("/svg/radiobutton-off.svg") no-repeat 50% 50%;
+  mask: url("/svg/radiobutton-off.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #d7d9da;
+  transition: all 0.16s;
+}
+.frame .radio-button label:hover::before {
+  background-color: #adb0b2;
+}
+.frame .radio-button input:checked + label::before {
+  -webkit-mask: url("/svg/radiobutton-on.svg") no-repeat 50% 50%;
+  mask: url("/svg/radiobutton-on.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #e42462;
+}
+.frame .radio-button input:hover:checked + label::before {
+  background-color: #cc203f;
+}
 
 /*# sourceMappingURL=task_5.css.map */

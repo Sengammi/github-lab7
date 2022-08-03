@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto,sans-serif;
+}
+input[type=radio], input[type=checkbox]{
+  display: none;
+}
+.frame{
+  width: 100%;
+  .checkboxes{
+    display: flex;
+    width: 100%;
+  }
+  .radio-buttons{
+    display: flex;
+    width: 100%;
+  }
+  .checkbox,.radio-button{
+    display: inline;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .checkbox, .radio-button{
+    label{
+      &::before{
+        position: relative;
+        display: inline-block;
+        content: '';
+        margin-right: 10px;
+      }
+    }
+  }
+  .checkbox{
+    label{
+      &::before{
+        top: 7px;
+        width: 36px;
+        height: 36px;
+        -webkit-mask: url('/svg/checkbox-unchecked.svg') no-repeat 50% 50%;
+        mask: url('/svg/checkbox-unchecked.svg') no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        background-color: #d7d9da;
+        transition: all 0.16s;
+      }
+      &:hover::before{
+        background-color: #adb0b2;
+      }
+    }
+    input:checked + label::before{
+      -webkit-mask: url('/svg/checkbox-checked.svg') no-repeat 50% 50%;
+      mask: url('/svg/checkbox-checked.svg') no-repeat 50% 50%;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      background-color: #961ade;
+    }
+    input:hover:checked + label::before{
+      background-color: #bf1bf2;
+    }
+  }
+
+  .radio-button{
+    label{
+      &::before{
+        top: 10px;
+        width: 42px;
+        height: 42px;
+        -webkit-mask: url('/svg/radiobutton-off.svg') no-repeat 50% 50%;
+        mask: url('/svg/radiobutton-off.svg') no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        background-color: #d7d9da;
+        transition: all 0.16s;
+      }
+      &:hover::before{
+        background-color: #adb0b2;
+      }
+    }
+    input:checked + label::before{
+      -webkit-mask: url('/svg/radiobutton-on.svg') no-repeat 50% 50%;
+      mask: url('/svg/radiobutton-on.svg') no-repeat 50% 50%;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      background-color: #e42462;
+    }
+    input:hover:checked + label::before{
+      background-color: #cc203f;
+    }
+  }
+}
