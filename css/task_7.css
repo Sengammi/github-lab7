@@ -23,6 +23,7 @@ a:active {
 
 .title-name {
   text-align: center;
+  margin-top: 20px;
 }
 
 .container {
@@ -83,7 +84,7 @@ a:active {
   margin: 15px 0;
 }
 .container .bottom p {
-  text-indent: 15px;
+  text-align: center;
 }
 .container .bottom p a {
   color: #3eafc4;
@@ -104,6 +105,21 @@ a:active {
 .container.fixed .middle .right-colon {
   width: 150px;
   min-width: 150px;
+}
+.container.edit {
+  width: 100%;
+}
+.container.edit .middle .left-colon {
+  width: 20%;
+  min-width: 20%;
+}
+.container.edit .middle .central-colon {
+  width: 55%;
+  min-width: 55%;
+}
+.container.edit .middle .right-colon {
+  width: 25%;
+  min-width: 25%;
 }
 
 /*# sourceMappingURL=task_7.css.map */

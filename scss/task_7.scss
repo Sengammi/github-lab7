@@ -20,6 +20,7 @@ a{
 }
 .title-name{
   text-align: center;
+  margin-top: 20px;
 }
 .container{
   display: block;
@@ -78,7 +79,7 @@ a{
       margin: 15px 0;
     }
     p{
-      text-indent: 15px;
+      text-align: center;
       a{
         color: #3eafc4;
         &:hover{
@@ -102,6 +103,23 @@ a{
       .right-colon{
         width: 150px;
         min-width: 150px;;
+      }
+    }
+  }
+  &.edit{
+    width: 100%;
+    .middle{
+      .left-colon{
+        width: 20%;
+        min-width: 20%;;
+      }
+      .central-colon{
+        width: 55%;
+        min-width: 55%;
+      }
+      .right-colon{
+        width: 25%;
+        min-width: 25%;
       }
     }
   }
