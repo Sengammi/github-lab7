@@ -1,3 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #87c087;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline 2px solid;
+  color: #619642;
+}
+a:active {
+  color: #2e8049;
+}
+
+.title-name {
+  text-align: center;
+}
+
+.container {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  background-color: #eaeeec;
+  color: #8d6363;
+  border-radius: 20px;
+}
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
+  color: #694242;
+}
+.container .top {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5afb4122f79392078acbaa2f/1527944778759-576MEOSAZ0W8MLGPB6A3/rocks.jpg");
+  background-size: 120%;
+  opacity: 0.7;
+  border-radius: 20px 20px 5px 5px;
+}
+.container .middle {
+  display: flex;
+}
+.container .middle .left-colon, .container .middle .right-colon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.container .middle .left-colon li, .container .middle .right-colon li {
+  margin: 20px auto;
+}
+.container .middle .central-colon {
+  margin: 0 auto;
+  padding: 10px;
+}
+.container .middle .central-colon p {
+  text-indent: 15px;
+  margin: 5px 0;
+}
+.container .middle .central-colon h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+.container .middle .central-colon img {
+  width: 50px;
+  height: 50px;
+  justify-content: left;
+}
+.container .bottom {
+  padding: 20px;
+}
+.container .bottom h3 {
+  text-align: center;
+  margin: 15px 0;
+}
+.container .bottom p {
+  text-indent: 15px;
+}
+.container .bottom p a {
+  color: #3eafc4;
+}
+.container .bottom p a:hover {
+  color: #4589e1;
+}
+.container .bottom p a:active {
+  color: #5b5fd7;
+}
+.container.fixed {
+  width: 960px;
+}
+.container.fixed .middle .left-colon {
+  width: 200px;
+  min-width: 200px;
+}
+.container.fixed .middle .right-colon {
+  width: 150px;
+  min-width: 150px;
+}
 
 /*# sourceMappingURL=task_7.css.map */

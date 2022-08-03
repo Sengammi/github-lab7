@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #87c087;
+  font-weight: bold;
+  &:hover{
+    text-decoration:underline 2px solid;
+    color: #619642;
+  }
+  &:active{
+    color: #2e8049;
+  }
+}
+.title-name{
+  text-align: center;
+}
+.container{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  background-color: #eaeeec;
+  color: #8d6363;
+  border-radius: 20px;
+  h1,h2,h3,h4,h5,h6{
+    color: #694242;
+  }
+  .top{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5afb4122f79392078acbaa2f/1527944778759-576MEOSAZ0W8MLGPB6A3/rocks.jpg");
+    background-size: 120%;
+    opacity: 0.7;
+    border-radius: 20px 20px 5px 5px;
+  }
+  .middle{
+    display: flex;
+    .left-colon, .right-colon{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      li{
+        margin: 20px auto;
+      }
+    }
+    .central-colon{
+      margin: 0 auto;
+      padding: 10px;
+      p{
+        text-indent: 15px;
+        margin: 5px 0;
+      }
+      h1{
+        text-align: center;
+        margin: 15px 0;
+      }
+      img{
+        width: 50px;
+        height: 50px;
+        justify-content: left;
+      }
+    }
+
+  }
+  .bottom{
+    padding: 20px;
+    h3{
+      text-align: center;
+      margin: 15px 0;
+    }
+    p{
+      text-indent: 15px;
+      a{
+        color: #3eafc4;
+        &:hover{
+          color: #4589e1;
+        }
+        &:active{
+          color: #5b5fd7;
+        }
+      }
+    }
+  }
+  &.fixed{
+    width: 960px;
+    .middle{
+      .left-colon{
+        width: 200px;
+        min-width: 200px;;
+      }
+      .central-colon{
+      }
+      .right-colon{
+        width: 150px;
+        min-width: 150px;;
+      }
+    }
+  }
+}
