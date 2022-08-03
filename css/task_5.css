@@ -38,8 +38,8 @@ input[type=radio], input[type=checkbox] {
   top: 7px;
   width: 36px;
   height: 36px;
-  -webkit-mask: url("/svg/checkbox-unchecked.svg") no-repeat 50% 50%;
-  mask: url("/svg/checkbox-unchecked.svg") no-repeat 50% 50%;
+  -webkit-mask: url("../svg/checkbox-unchecked.svg") no-repeat 50% 50%;
+  mask: url("../svg/checkbox-unchecked.svg") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: #d7d9da;
@@ -49,8 +49,8 @@ input[type=radio], input[type=checkbox] {
   background-color: #adb0b2;
 }
 .frame .checkbox input:checked + label::before {
-  -webkit-mask: url("/svg/checkbox-checked.svg") no-repeat 50% 50%;
-  mask: url("/svg/checkbox-checked.svg") no-repeat 50% 50%;
+  -webkit-mask: url("../svg/checkbox-checked.svg") no-repeat 50% 50%;
+  mask: url("../svg/checkbox-checked.svg") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: #961ade;
@@ -62,8 +62,8 @@ input[type=radio], input[type=checkbox] {
   top: 10px;
   width: 42px;
   height: 42px;
-  -webkit-mask: url("/svg/radiobutton-off.svg") no-repeat 50% 50%;
-  mask: url("/svg/radiobutton-off.svg") no-repeat 50% 50%;
+  -webkit-mask: url("../svg/radiobutton-off.svg") no-repeat 50% 50%;
+  mask: url("../svg/radiobutton-off.svg") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: #d7d9da;
@@ -73,8 +73,8 @@ input[type=radio], input[type=checkbox] {
   background-color: #adb0b2;
 }
 .frame .radio-button input:checked + label::before {
-  -webkit-mask: url("/svg/radiobutton-on.svg") no-repeat 50% 50%;
-  mask: url("/svg/radiobutton-on.svg") no-repeat 50% 50%;
+  -webkit-mask: url("../svg/radiobutton-on.svg") no-repeat 50% 50%;
+  mask: url("../svg/radiobutton-on.svg") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: #e42462;
